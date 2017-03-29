@@ -63,7 +63,6 @@
 		document.getElementById("choose").onclick = function(){
 			var redArr = ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32"];
 			var blueArr = ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"];
-			
 			var newRedArr = [];
 			for (var i=0;i<=5;i++) {
 				var redNum = Math.floor(Math.random()*redArr.length);
@@ -71,7 +70,6 @@
 				newRedArr[i]=redObj;
 				redArr.splice(redNum,1);
 			}
-			console.log(newRedArr);
 			for (var i=0;i<6;i++) {
 				newRedArr = newRedArr.sort();
 				inputObj[i].value = newRedArr[i];
